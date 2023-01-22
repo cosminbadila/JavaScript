@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function inmultire(a, b){
+            return a*b;
+        }
+        
+        function adunare(x,y){
+            return x+y;
+        }
+        
+        function scadere(n, m){
+            if(n<m){
+            return m-n;
+            }
+            else{
+                return n-m;
+            }            
+        }
+
+        function impartire(n, m){
+            if(n<m){
+            return m/n;
+            }
+            else{
+                return n/m;
+            }           
+        }
+
+        
+
+        // console.log(inmultire(2,4));
+        // let x =20, y=22 ;
+        // console.log(`scaderea dintre ${x} si ${y} este : ` + scadere(x , y))
+
+        // console.log(`adunarea dintre ${x} si ${y} este : ` + adunare(x , y))
+        
+        // console.log(`impartirea dintre ${x} si ${y} este : ` + impartire(x , y))
+
+        let x= eval(prompt('primul numar este :' ));
+        let y= eval(prompt('al doilea numar este :' ));
+        
+        let operatie=prompt('selectati operatia: + , - , * , / ');
+
+        if(operatie=='+'){
+            document.write('rezultatul adunarii este: ', adunare(x,y))
+        }
+        if(operatie=='-'){
+            document.write('rezultatul scaderii este: ', scadere(x,y))
+        }
+        if(operatie=='*'){
+            document.write('rezultatul inmultirii este: ', inmultire(x,y))
+        }
+        if(operatie=='/'){
+            document.write('rezultatul impartirii este: ', impartire(x,y))
+        }
+    </script>
+    
+</body>
+</html>
