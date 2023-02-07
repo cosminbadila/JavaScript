@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const masina={
+            marca:'dacia',
+            model:'logan',
+            culoare:'albastra',
+            nrUsi: 4,
+            electric: false,
+            start: function(){
+                console.log ('masina a pornit');
+            },
+            stop: function(){
+                console.log ('masina s-a oprit');
+            },
+            afiseazainfo: function(){
+                console.log (`masina mea este ${masina.marca} model ${masina.model}`);
+                console.log ('masina mea este '+this.marca+ ' model ' + this.model);
+            }
+        }
+        console.log(masina.marca);
+        masina.afiseazainfo();
+
+        const masina2=masina;
+
+        masina.marca='bmw';
+
+        console.log (masina);
+        console.log (masina2);
+
+    </script>
+    
+</body>
+</html>

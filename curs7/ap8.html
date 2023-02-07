@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sursa">Lorem ipsum, dolor sit 0756407332 amet consectetur adipisicing elit. 
+        Atque fugiat quae voluptatibus! Officia obcaecati dolor ea voluptatem 
+        assumenda maiores ullam 1298 734693 ducimus vero. At molestias, error atque mollitia 
+        dolorum ab nam?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Atque fugiat quae voluptatibus! +56 20 987615 Officia obcaecati dolor ea voluptatem 
+         assumenda maiores ullam ducimus vero. At molestias, 0923879128 error atque mollitia 
+         dolorum ab nam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+         Atque 0987123486 fugiat quae voluptatibus! Officia +4092875634 obcaecati dolor ea voluptatem 
+         assumenda maiores ullam ducimus vero. 0912 987 630 At molestias, error atque mollitia
+         dolorum ab nam?</p>
+    <p id="destinatie"></p>
+    <script>
+        let sursa=document.getElementById('sursa').innerHTML;
+        console.log(sursa);
+        let pattern=/[\+]?[0-9\s]{10,16}/g;
+        //let pattern=/[\+]?[0-9-\s]{10,16}/ig;
+        let result= sursa.match(pattern);
+        document.getElementById('destinatie').innerHTML=result
+
+        // let result2=sursa.matchAll(pattern);
+        // console.log(Array.from(result2));
+
+    </script>
+    
+</body>
+</html>

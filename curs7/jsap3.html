@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var fructe=['mar','portocala','banana'];
+    var fructenew = fructe.push('pepene', 'kiwi');
+
+    console.log(fructe);
+
+    console.log(fructenew);
+
+    fructe.pop();
+    console.log(fructe);
+
+    fructe.unshift('piersica');
+    console.log(fructe);
+
+    fructe.forEach(afiseaza);
+
+    function afiseaza(item){
+        console.log(item);
+    }
+
+    let myArr = fructe.map(item=>item.toLocaleUpperCase());
+    console.log(myArr)
+
+
+
+</script>    
+</body>
+</html>
